@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-content">
+        <img src="./profile.jpeg" alt="Profile Picture" class="profile-pic" />
+        <div>
+          <h1>Nikolaos Panagopoulos</h1>
+          <p>Programmer & 3D Artist</p>
+        </div>
+      </div>
+    </header>
+    <nav>
+      <button class="tab-btn active" data-tab="programming">Programming</button>
+      <button class="tab-btn" data-tab="3dart">3D Art</button>
+    </nav>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I'm a Lead Support Engineer and a generalist who enjoys tackling complex
+        problems across software systems. By day, I help keep production running
+        smoothly and bridge technical gaps between teams. In my spare time, I’m
+        a game developer and 3D artist, exploring creativity through code,
+        design, and digital sculpting. I thrive at the intersection of technical
+        depth and artistic expression.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+
+      <div id="programming" class="project-grid tab-content active">
+        <div class="card image-card">
+          <a
+            href="https://github.com/nikolaospanagopoulos/kernel"
+            target="_blank"
+          >
+            <img src="./CPU.jpg" alt="CPU" />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/nikolaospanagopoulos/kernel"
+          >
+            <div class="info">
+              <h3>Kernel</h3>
+              <p>
+                A 32bit kernel with a custom bootloader, developed using x86
+                (nasm) assembly and the C programming language. It includes a
+                custom file system implementation, a heap memory manager and
+                multitasking.
+              </p>
+            </div>
+          </a>
+        </div>
+        <div class="card image-card">
+          <a
+            href="https://github.com/nikolaospanagopoulos/Panavim"
+            target="_blank"
+          >
+            <img src="./textEditor.jpg" alt="text editor" />
+          </a>
+          <a
+            target="_blank"
+            href="https://github.com/nikolaospanagopoulos/Panavim"
+          >
+            <div class="info">
+              <h3>Text Editor</h3>
+              <p>
+                High-performance text editor inspired by Vim, crafted
+                meticulously in C++. Designed for speed and efficiency, it
+                operates seamlessly across multiple modes including Normal,
+                Input, and Command. Through continuous enhancements, it embodies
+                my dedication to creating robust, user-centric software
+                solutions.
+              </p>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div id="3dart" class="project-grid tab-content">
+        <div class="card image-card">
+          <a href="./corridor.png" target="_blank">
+            <img src="./corridor.png" alt="spooky corridor" />
+          </a>
+          <div class="info">
+            <h3>A spooky corridor</h3>
+            <p>made using uv-mapping</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <p>
+        <a href="./nikolaos_panagopoulos_update.pdf" target="_blank"
+          >Download my resume (PDF)</a
+        >
+      </p>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+
+      <div class="company">
+        <h3>Phaistos Networks — Lead Support Engineer</h3>
+        <p class="duration">April 2025 – Present</p>
+        <p class="bio">
+          Led a technical support team, optimized workflows, and ensured
+          high-quality resolution of complex issues. Also mentored and coached
+          junior support engineers, conducting code reviews, training sessions,
+          and performance evaluations to improve team efficiency.
+        </p>
+      </div>
+      <div class="company">
+        <h3>Phaistos Networks — Front End Engineer</h3>
+        <p class="duration">Jul 2021 – Mar 2025</p>
+        <p class="bio">
+          Worked with JavaScript to implement client-side logic, state
+          management, and API integrations.
+        </p>
+      </div>
+      <div class="company">
+        <h3>Phaistos Networks — Support Engineer</h3>
+        <p class="duration">Jan 2021 – Jul 2021</p>
+        <p class="bio">
+          Provided technical support and troubleshooting expertise for web-based
+          applications, resolving issues efficiently.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: kerneldevgr@gmail.com</p>
+      <p>GitHub: https://github.com/nikolaospanagopoulos</p>
+    </section>
+
+    <footer>
+      <p>© 2025 Nikolaos Panagopoulos</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
